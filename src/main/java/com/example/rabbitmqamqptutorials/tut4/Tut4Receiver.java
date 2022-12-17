@@ -13,6 +13,10 @@ public class Tut4Receiver {
 	public void receive1(Message message, String in) throws InterruptedException {
 		receive(in, 1, message.getMessageProperties().getReceivedRoutingKey());
 	}
+//	@RabbitListener(queues = "#{autoDeleteQueue1.name}")
+//	public void receive1b(Message message, String in) throws InterruptedException {
+//		receive(in, 3, message.getMessageProperties().getReceivedRoutingKey());
+//	}
 
 	@RabbitListener(queues = "#{autoDeleteQueue2.name}")
 	public void receive2(Message message, String in) throws InterruptedException {
