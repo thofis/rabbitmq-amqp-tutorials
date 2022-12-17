@@ -11,5 +11,5 @@ logging:
 
 tutorial:
   client:
-    duration: 30000
+    duration: 300000
 
