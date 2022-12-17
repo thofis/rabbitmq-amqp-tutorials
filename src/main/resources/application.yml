@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: usage_message
+  rabbitmq:
+    username: user
+    password: bitnami
 
 logging:
   level:
@@ -9,3 +12,4 @@ logging:
 tutorial:
   client:
     duration: 10000
+
